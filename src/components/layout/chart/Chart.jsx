@@ -3,7 +3,6 @@ import {
   AreaChart,
   Area,
   XAxis,
-  YAxis,
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
@@ -36,7 +35,7 @@ const data = [
   },
 ];
 
-const Chart = ({aspect,title}) => {
+const Chart = ({ aspect, title }) => {
   return (
     <div className="chart">
       <div className="title">{title}</div>
@@ -53,9 +52,9 @@ const Chart = ({aspect,title}) => {
               <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
             </linearGradient>
           </defs>
-          <XAxis dataKey="name" stroke='gray' />
-          
-          <CartesianGrid strokeDasharray="3 3" className='chartGrid' />
+          <XAxis dataKey="name" stroke="gray" />
+
+          <CartesianGrid strokeDasharray="3 3" className="chartGrid" />
           <Tooltip />
           <Area
             type="monotone"
@@ -64,7 +63,6 @@ const Chart = ({aspect,title}) => {
             fillOpacity={1}
             fill="url(#total)"
           />
-         
         </AreaChart>
       </ResponsiveContainer>
     </div>

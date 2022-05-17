@@ -6,7 +6,7 @@ import Single from './pages/single/Single';
 import New from './pages/new/New';
 import { productInputs, userInputs } from './formSource';
 import './style/dark.scss';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { DarkModeContenxt } from './context/darkModeContext';
 function App() {
   const { darkMode } = useContext(DarkModeContenxt);
